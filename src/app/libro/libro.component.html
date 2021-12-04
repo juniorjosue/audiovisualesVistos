@@ -38,7 +38,7 @@
   </mat-card-content>
 </mat-card>
 
-<!-- <mat-card>
+<mat-card>
   <mat-card-header>
     <mat-card-title>Create a Contact</mat-card-title>
   </mat-card-header>
@@ -46,14 +46,14 @@
     <form #f ="ngForm" class="mat-elevation-z8" style="width: 100%; padding: 5px;">
 
       <mat-form-field>
-        <input matInput placeholder="Name" name="name" [(ngModel)] = "libro.titulo" required>
+        <input matInput placeholder="titulo" name="titulo" [(ngModel)] = "libro.titulo" required>
       </mat-form-field>
       <mat-form-field>
-          <input matInput placeholder="Title" name="title" [(ngModel)] = "libro.autor" required>
+          <input matInput placeholder="autor" name="autor" [(ngModel)] = "libro.autor" required>
       </mat-form-field>
 
       <mat-form-field>
-          <input matInput placeholder="Email" name="email" [(ngModel)] = "libro.descripcion" required>
+          <input matInput placeholder="descripcion" name="descripcion" [(ngModel)] = "libro.descripcion" required>
       </mat-form-field>
 
 
@@ -63,7 +63,7 @@
   <mat-card-actions>
       <button  mat-raised-button *ngIf="!libro.id" (click)="createContact(f)" color="primary">Save Contact</button>
       <button  mat-raised-button *ngIf="libro.id" (click)="updateContact(f)" color="primary">Update Contact</button>
-      <button  mat-raised-button (click)="newContact()" color="primary">New..</button>
+      
 
   </mat-card-actions>
-</mat-card> -->
+</mat-card>
